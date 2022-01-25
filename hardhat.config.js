@@ -13,7 +13,7 @@ module.exports = {
     mumbai: {
       // Infura
       // url: `https://polygon-mumbai.infura.io/v3/${infuraId}`
-      url: "https://rpc-mumbai.matic.today",
+      url: "https://matic-mumbai.chainstacklabs.com",
       accounts: [privateKey]
     },
     matic: {

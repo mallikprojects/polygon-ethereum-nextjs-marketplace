@@ -10,7 +10,7 @@ import {
 import NFT from '../artifacts/contracts/NFT.sol/NFT.json'
 import Market from '../artifacts/contracts/Market.sol/NFTMarket.json'
 
-let rpcEndpoint = null
+let rpcEndpoint = "https://matic-mumbai.chainstacklabs.com" 
 
 /*
 if (process.env.NEXT_PUBLIC_WORKSPACE_URL) {
