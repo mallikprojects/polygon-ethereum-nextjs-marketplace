@@ -66,6 +66,11 @@ export default function CreateItem() {
 
     const price = ethers.utils.parseUnits(formInput.price, 'ether')
   
+    // allow token from the NFT contract to be listed on the markeplace
+    transaction = await contract.setApprovalForAll(nftmarketaddress, true);
+    await transaction.wait();
+
+
     /* then list the item for sale on the marketplace */
     contract = new ethers.Contract(nftmarketaddress, Market.abi, signer)
     let listingPrice = await contract.getListingPrice()
